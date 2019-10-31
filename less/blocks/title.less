@@ -1,0 +1,39 @@
+.title {
+  margin-bottom: 40px;
+  color: #1A1A1A;
+  
+  .title-2 {
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+}
+
+.title__top {
+  margin: 0;
+  font-family: "Gotham Pro", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.title__bottom {
+  position: relative;
+  padding-left: 143px;
+  font-family: "Gotham Pro", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 128px;
+    height: 2px;
+    background-color: #D6975A;
+  }
+}
