@@ -182,15 +182,15 @@
     <section class="block">
       <div class="wrapper block__wrap">
         <div class="block__view">
-          <div class="swiper-container block__slider">
+          <div class="swiper-container block__slider block__slider-01">
             <div class="swiper-wrapper">
               <div class="swiper-slide block__slide" style="background-image:url(img/images/img-6.jpg)"></div>
               <div class="swiper-slide block__slide" style="background-image:url(img/images/img-7.jpg)"></div>
               <div class="swiper-slide block__slide" style="background-image:url(img/images/img-8.jpg)"></div>
             </div>
           </div>
-          <div class="swiper-button-prev block__prev"></div>
-          <div class="swiper-button-next block__next"></div>
+          <div class="swiper-button-prev block__prev-01"></div>
+          <div class="swiper-button-next block__next-01"></div>
         </div>
         <div class="block__info">
           <p class="title-2">Косметический ремонт</p>
@@ -204,15 +204,15 @@
     <section class="block block--dark">
       <div class="wrapper block__wrap">
         <div class="block__view">
-          <div class="swiper-container block__slider">
+          <div class="swiper-container block__slider block__slider-02">
             <div class="swiper-wrapper">
               <div class="swiper-slide block__slide" style="background-image:url(img/images/img-7.jpg)"></div>
               <div class="swiper-slide block__slide" style="background-image:url(img/images/img-6.jpg)"></div>
               <div class="swiper-slide block__slide" style="background-image:url(img/images/img-8.jpg)"></div>
             </div>
           </div>
-          <div class="swiper-button-prev block__prev"></div>
-          <div class="swiper-button-next block__next"></div>
+          <div class="swiper-button-prev block__prev-02"></div>
+          <div class="swiper-button-next block__next-02"></div>
         </div>
         <div class="block__info">
           <p class="title-2">Капитальный ремонт</p>
@@ -226,15 +226,15 @@
     <section class="block">
       <div class="wrapper block__wrap">
         <div class="block__view">
-          <div class="swiper-container block__slider">
+          <div class="swiper-container block__slider block__slider-03">
             <div class="swiper-wrapper">
               <div class="swiper-slide block__slide" style="background-image:url(img/images/img-8.jpg)"></div>
               <div class="swiper-slide block__slide" style="background-image:url(img/images/img-7.jpg)"></div>
               <div class="swiper-slide block__slide" style="background-image:url(img/images/img-6.jpg)"></div>
             </div>
           </div>
-          <div class="swiper-button-prev block__prev"></div>
-          <div class="swiper-button-next block__next"></div>
+          <div class="swiper-button-prev block__prev-03"></div>
+          <div class="swiper-button-next block__next-03"></div>
         </div>
         <div class="block__info">
           <p class="title-2">Ремонт с разработкой дизайн-проекта</p>
@@ -248,15 +248,15 @@
     <section class="block block--dark">
       <div class="wrapper block__wrap">
         <div class="block__view">
-          <div class="swiper-container block__slider">
+          <div class="swiper-container block__slider block__slider-04">
             <div class="swiper-wrapper">
               <div class="swiper-slide block__slide" style="background-image:url(img/images/img-9.jpg)"></div>
               <div class="swiper-slide block__slide" style="background-image:url(img/images/img-6.jpg)"></div>
               <div class="swiper-slide block__slide" style="background-image:url(img/images/img-8.jpg)"></div>
             </div>
           </div>
-          <div class="swiper-button-prev block__prev"></div>
-          <div class="swiper-button-next block__next"></div>
+          <div class="swiper-button-prev block__prev-04"></div>
+          <div class="swiper-button-next block__next-04"></div>
         </div>
         <div class="block__info">
           <p class="title-2">Эксклюзивный ремонт с сопровождением студии</p>
@@ -421,10 +421,37 @@
 
   <!-- Sliders -->
   <script>
-    var mySwiper = new Swiper ('.block__slider', {
+    var mySwiper = new Swiper ('.block__slider-01', {
       navigation: {
-        nextEl: '.block__next',
-        prevEl: '.block__prev',
+        nextEl: '.block__next-01',
+        prevEl: '.block__prev-01',
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
+    
+    var mySwiper = new Swiper ('.block__slider-02', {
+      navigation: {
+        nextEl: '.block__next-02',
+        prevEl: '.block__prev-02',
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
+    
+    var mySwiper = new Swiper ('.block__slider-03', {
+      navigation: {
+        nextEl: '.block__next-03',
+        prevEl: '.block__prev-03',
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
+    
+    var mySwiper = new Swiper ('.block__slider-04', {
+      navigation: {
+        nextEl: '.block__next-04',
+        prevEl: '.block__prev-04',
       },
       preventClicks: false,
       preventClicksPropagation: false,

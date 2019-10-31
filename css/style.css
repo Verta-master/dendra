@@ -1085,3 +1085,117 @@ h1,
   line-height: 28px;
   text-align: center;
 }
+.block {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.block--dark {
+  background-color: #37312B;
+}
+.block--dark .title-2 {
+  color: #fff;
+  text-align: right;
+  font-size: 44px;
+}
+.block--dark .block__wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.block--dark .block__price,
+.block--dark .block__info {
+  text-align: right;
+}
+.block--dark .block__btn {
+  margin-left: auto;
+}
+.block--dark .block__info {
+  color: rgba(255, 255, 255, 0.8);
+}
+.block--dark .block__view::before {
+  right: -60px;
+  left: auto;
+}
+.block__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.block__view {
+  position: relative;
+  width: 590px;
+  z-index: 2;
+}
+.block__view::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -60px;
+  bottom: -60px;
+  width: 340px;
+  height: 331px;
+  background-image: url(../img/images/pattern.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.block__view .swiper-button-prev,
+.block__view .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/icons/next.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 16px;
+  background-position: center;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  outline: none;
+}
+.block__view .swiper-button-prev {
+  left: -20px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.block__view .swiper-button-next {
+  right: -20px;
+}
+.block__info {
+  width: calc(100% - 650px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.block__slide {
+  height: 440px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.block__price {
+  margin: 0;
+  color: #D6975A;
+  letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.block__price b {
+  font-weight: 500;
+  font-size: 26px;
+}
+.block__btn {
+  margin-top: auto;
+}
