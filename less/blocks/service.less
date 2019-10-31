@@ -1,0 +1,130 @@
+.service {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 30px;
+  padding-top: 75px;
+  color: #fff;
+  background-image: url(../img/images/bg-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #231F1C;
+    opacity: 0.9;
+  }
+  
+  .title {
+    margin-bottom: 70px;
+    color: #fff;
+  }
+  .title-2 {
+    color: #fff;
+  }
+}
+
+.service__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: -30px;
+}
+
+.service__item {
+  width: 270px;
+  max-width: 100%;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.service__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  
+  &:hover,
+  &:active {
+    .service__info {
+      color: #1A1A1A;
+      background-color: #fff;
+      .transition();
+      
+      &::before {
+        opacity: 0.3;
+        .transition();
+      }
+    }
+    .service__img img {
+      transform: scale(1.02);
+      .transition();
+    }
+  }
+}
+
+.service__img {
+  width: 100%;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    flex: 0 0 auto;
+    .transition();
+  }
+}
+
+.service__info {
+  position: relative;
+  z-index: 5;
+  padding: 10px;
+  padding-bottom: 40px;
+  .transition();
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #D6975A;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../img/images/pattern.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    .transition();
+  }
+}
+
+.service__title {
+  font-family: "Playfair Display", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
