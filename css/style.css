@@ -1014,10 +1014,10 @@ h1,
 }
 .service__link:hover .service__img img,
 .service__link:active .service__img img {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: ease-out 0.75s;
+  transition: ease-out 0.75s;
 }
 .service__img {
   width: 100%;
@@ -1151,7 +1151,7 @@ h1,
   background-repeat: no-repeat;
   background-size: 10px 16px;
   background-position: center;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
@@ -1429,4 +1429,190 @@ h1,
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
+}
+.form__checkbox {
+  display: none;
+}
+.form__check {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.form__check a {
+  text-decoration: underline;
+}
+.form__check a:hover,
+.form__check a:active {
+  text-decoration: none;
+}
+.form__check::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+}
+.form__check::after {
+  display: none;
+  content: "\2713";
+  position: absolute;
+  top: -2px;
+  left: 3px;
+  font-size: 20px;
+  color: #fff;
+}
+.form__checkbox:checked + .form__check::after {
+  display: block;
+}
+.footer {
+  padding-top: 85px;
+  color: #fff;
+  background-image: url(../img/images/bg-footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer__bottom {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.footer__bottom p {
+  margin: 0;
+}
+.footer__logo {
+  margin-bottom: 60px;
+}
+.footer__wrap {
+  padding-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__title {
+  position: relative;
+  margin-top: 0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer__title::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #D6975A;
+}
+.footer__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 30px;
+}
+.footer__menu a:hover,
+.footer__menu a:active {
+  color: #D6975A;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__contacts {
+  width: 47%;
+}
+.footer__block {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 70px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer__block b {
+  font-weight: 500;
+  font-size: 18px;
+}
+.footer__block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 0.630705px solid #D6975A;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.footer__block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer__block--phone::after {
+  background-image: url(../img/icons/phone.svg);
+  background-size: 13px 13px;
+}
+.footer__block--address::after {
+  background-image: url(../img/icons/location.svg);
+  background-size: 12px 17px;
+}
+.footer__block--mail {
+  font-size: 18px;
+}
+.footer__block--mail::after {
+  background-image: url(../img/icons/mail.svg);
+  background-size: 14px 11px;
+}
+.footer__block a:hover,
+.footer__block a:active {
+  color: #D6975A;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__phones {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+}
+.footer__phones a:first-of-type {
+  margin-right: 50px;
+}
+.modal {
+  width: 400px;
+  max-width: 100%;
+  padding: 35px 45px;
+  background-color: #D6975A;
+}
+.modal__title {
+  margin-top: 0;
+  font-family: "Playfair Display", "Arial", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+}
+.fancybox-close-small svg {
+  stroke: #fff;
 }

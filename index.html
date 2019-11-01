@@ -389,8 +389,8 @@
         <div class="footer__contacts">
           <div class="footer__block footer__block--phone">
             <div class="footer__phones">
-              <a href="tel:+79261503553">8 (926) 150-35-53</a>
-              <a href="tel:+74957430607">8 (495) 743-06-07</a>
+              <a href="tel:+79261503553">+7 (926) 150-35-53</a>
+              <a href="tel:+74957430607">+7 (495) 743-06-07</a>
             </div>
             <p><b>Режим работы</b><br>пн.-сб. с 9.00 - 19.00. вс. - выходной</p>
           </div>
@@ -412,7 +412,16 @@
   
   <!-- Modal window -->
   <div style="display: none;" id="call" class="modal">
-    
+    <p class="modal__title">Заказать звонок</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Имя">
+      <input type="text" class="form__input" placeholder="Номер">
+      <label for="message" class="form__label">Ваша информация</label>
+      <textarea id="message" class="form__message"></textarea>
+      <input type="checkbox" id="checkbox2" class="form__checkbox" checked="">
+      <label for="checkbox2" class="form__check">Отправляя форму, вы даете согласие на <a href="#">обработку своих персональных данных.</a></label>
+      <button type="submit" class="form__btn">Заказать звонок</button>
+    </form>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
