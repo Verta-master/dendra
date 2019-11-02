@@ -99,6 +99,12 @@
   .reason::after {
     width: 25%;
   }
+  .header--internal .logo {
+    margin-right: 0;
+  }
+  .intro__column {
+    width: 50%;
+  }
 }
 
 //-----------------------------------------
@@ -127,6 +133,7 @@
     display: none;
     margin-top: 18px;
   }
+  .header__menu-btn,
   .menu-btn {
     display: block;
     width: 30px;
@@ -172,7 +179,6 @@
     width: 200px;
   }
   .benefits--internal .benefits__item {
-//    padding-top: 100px;
     padding-bottom: 50px;
   }
   .feedback__form {
@@ -245,6 +251,87 @@
     width: 100%;
     padding: 0;
   }
+  .intro__column {
+    padding-right: 30px;
+  }
+  .title-1,
+  h1 {
+    font-size: 42px;
+  }
+  .work {
+    padding-bottom: 80px;
+  }
+  .work__next {
+    right: 0;
+  }
+  .work__prev {
+    left: 0;
+  }
+  .work__slider {
+    display: block;
+    height: auto;
+    padding: 30px;
+  }
+  .gallery-top {
+    width: 100%;
+  }
+  .gallery-thumbs {
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 20px;
+    margin-top: 30px;
+  }
+  .gallery-thumbs .work__thumb {
+    height: 100px;
+  }
+  .header__item:first-child,
+  .header__item:last-child {
+    position: static;
+  }
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__contacts {
+    width: 100%;
+    justify-content: space-between;
+    
+    .header__call,
+    .header__phone {
+      margin-left: 0;
+    }
+  }
+  .header__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #1A140F;
+  }
+  .header__menu-btn {
+    margin-left: auto;
+  }
+  .header__menu {
+    padding-top: 5px;
+  }
+  .header__block {
+    position: static;
+  }
+  .header__link {
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255, 0.2);
+  }
+  .header__item--drop {
+    padding-right: 0;
+    background-position: right 20px top 20px;
+  }
+  .header__drop {
+    display: flex;
+    position: static;
+    padding: 20px;
+  }
 }
 
 //-----------------------------------------
@@ -287,6 +374,49 @@
   }
   .menu__item:hover {
     .menu__drop {
+      display: block;
+    }
+  }
+  .header__menu {
+    padding-bottom: 5px;
+  }
+  .header__contacts {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .header__top {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .header__contacts .header__call {
+    margin-top: 5px;
+    margin-left: auto;
+  }
+  .header__contacts .header__phone {
+    margin-left: 20px;
+  }
+  .work,
+  .intro {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .title-1,
+  h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  .intro__columns {
+    display: block;
+  }
+  .intro__column {
+    width: 100%;
+    padding-right: 0;
+  }
+  .header__drop {
+    display: block;
+  }
+  .header__item:hover {
+    .header__drop {
       display: block;
     }
   }
@@ -396,5 +526,29 @@
     p {
       margin-left: 0;
     }
+  }
+  .work__img {
+    height: 200px;
+  }
+  .work__next,
+  .work__prev {
+    margin-top: 30px;
+  }
+  .header--internal .header__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header--internal .logo {
+    margin-left: 0;
+  }
+  .header__contacts {
+    justify-content: space-around;
+  }
+  .header__contacts .header__call {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .header__contacts .header__phone {
+    margin-left: 0;
   }
 }
