@@ -74,9 +74,34 @@ h2,
 
 h1,
 .title-1 {
+  position: relative;
+  max-width: 660px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 20px;
   font-size: 48px;
   line-height: 52px;
   font-family: "Playfair Display", "Arial", sans-serif;
   font-weight: 700;
+  color: #1A1A1A;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 128px;
+    height: 2px;
+    background-color: #D6975A;
+  }
+}
+
+h3,
+.title-3 {
+  margin-bottom: 0;
+  font-family: "Playfair Display", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
   color: #1A1A1A;
 }
