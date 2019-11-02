@@ -76,12 +76,12 @@
         <div class="promo__wrap">
           <p class="promo__internal">Ремонт квартир</p>
           <p class="promo__text">Современный ремонт премиум-класса с гарантией<br>3 года и двойной страховкой</p>
-          <a href="#" class="promo__down" title="Далее"></a>
+          <a href="#next" class="promo__down" title="Далее"></a>
         </div>
       </div>
     </section>
     
-    <section class="info">
+    <section class="info" id="next">
       <div class="wrapper info__wrap">
         <figure class="info__img">
           <img src="img/images/img-13.jpg" alt="О ремонте">
@@ -178,7 +178,7 @@
       </div>
     </section>
     
-    <section class="benefits">
+    <section class="benefits benefits--internal">
       <div class="wrapper">
         <ul class="benefits__list">
           <li class="benefits__item">
@@ -332,6 +332,16 @@
       slidesPerView: 'auto',
       loop: true,
       centeredSlides: true,
+    });
+  </script>
+  
+<!-- Scroll to arrow anchor -->
+  <script>
+    $('.promo__down').click(function() {
+      event.preventDefault();
+      var id  = $(this).attr('href');
+      var top = $(id).offset().top;
+      $('body, html').animate({scrollTop: top}, 500);
     });
   </script>
 </body>
