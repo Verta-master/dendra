@@ -105,6 +105,25 @@
   .intro__column {
     width: 50%;
   }
+  .intro__column-3 {
+    width: 33%;
+  }
+  .intro__column-3:nth-child(3n) {
+    margin-left: 0;
+    padding-left: 30px;
+  }
+  .intro__column-3 p {
+    padding-right: 30px;
+  }
+  .design__list {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-around;
+  }
+  .design__item {
+    width: 30%;
+    margin-right: 0;
+  }
 }
 
 //-----------------------------------------
@@ -221,6 +240,7 @@
       transform: rotate(90deg);
     }
   }
+  .design,
   .info--right,
   .step {
     padding-bottom: 60px;
@@ -234,6 +254,7 @@
   .reason__item {
     width: 50%;
   }
+  .design,
   .info {
     padding-top: 60px;
   }
@@ -332,6 +353,9 @@
     position: static;
     padding: 20px;
   }
+  .design__item {
+    width: 45%;
+  }
 }
 
 //-----------------------------------------
@@ -419,6 +443,12 @@
     .header__drop {
       display: block;
     }
+  }
+  .intro__column-3 {
+    width: 100%;
+  }
+  .intro__column-3:nth-child(3n) {
+    padding-left: 0;
   }
 }
 
@@ -550,5 +580,14 @@
   }
   .header__contacts .header__phone {
     margin-left: 0;
+  }
+  .intro__column-3 p {
+    padding-right: 0;
+  }
+  .design__item {
+    width: 100%;
+  }
+  .design__btn {
+    bottom: 38px;
   }
 }

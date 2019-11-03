@@ -2,6 +2,11 @@
   padding-top: 80px;
   padding-bottom: 70px;
   background-color: rgba(0, 0, 0, 0.05);
+  
+  h1,
+  .title-1 {
+    max-width: 700px;
+  }
 }
 
 .intro__columns {
@@ -27,5 +32,40 @@
         margin-right: 5px;
       }
     }
+  }
+}
+
+.intro__column-3 {
+  width: 370px;
+  margin-top: 25px;
+  
+  &:nth-child(3n) {
+    margin-left: 50px;
+  }
+  
+  p {
+    padding-right: 50px;
+  }
+}
+
+.intro__img {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  
+  img {
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: none;
+  }
+}
+
+.intro__block {
+  margin-bottom: 50px;
+  
+  .title-3 {
+    margin-top: 0;
   }
 }
