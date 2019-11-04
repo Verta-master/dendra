@@ -1,0 +1,145 @@
+.tabs {
+  margin-bottom: 160px;
+}
+
+.tabs__wrap {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -15px;
+    right: -15px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.tabs__title {
+  .reset();
+  list-style: none;
+  width: 400px;
+  
+  .ui-tabs-active a {
+    width: 100%;
+    background-color: #D6975A;
+    background-image: url(../img/icons/next-black.svg);
+    .transition();
+  }
+}
+
+.tabs__name {
+  font-size: 16px;
+  color: #fff;
+  
+  a {
+    display: block;
+    width: 370px;
+    padding: 22px 23px;
+    padding-right: 35px;
+    line-height: 1;
+    outline: none;
+    background-color: #37312B;
+    background-image: url(../img/icons/next.svg);
+    background-repeat: no-repeat;
+    background-size: 11px 16px;
+    background-position: right 23px center;
+    border-bottom: 1px solid #fff;
+    .transition();
+  }
+}
+
+.tabs__field {
+  width: ~"calc(100% - 400px)";
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    th {
+      position: relative;
+      height: 60px;
+      padding-left: 15px;
+      padding-right: 15px;
+      color: #fff;
+      font-weight: 500;
+      text-align: left;
+      background-color: rgba(41,35,29,0.6);
+      
+      &::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        bottom: 15px;
+        left: 0;
+        width: 1px;
+        background-color: rgba(255,255,255,0.15);
+      }
+      
+      &:first-child {
+        padding-left: 22px;
+        
+        &::before {
+          display: none;
+        }
+      }
+      
+      &:nth-child(2) {
+        width: 100px;
+      }
+      
+      &:last-child {
+        width: 145px;
+        text-align: right;
+      }
+    }
+    
+    td {
+      position: relative;
+      height: 60px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-weight: 300;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        bottom: 15px;
+        left: 0;
+        width: 1px;
+        background-color: rgba(0,0,0,0.08);
+      }
+      
+      &:first-child {
+        padding-left: 22px;
+        
+        &::before {
+          display: none;
+        }
+      }
+      
+      &:nth-child(2) {
+        width: 100px;
+      }
+      
+      &:last-child {
+        width: 145px;
+        text-align: right;
+        font-weight: 500;
+      }
+    }
+    
+    tr:nth-child(2n + 1) {
+      background-color: rgba(0,0,0,0.03);
+    }
+  }
+}
