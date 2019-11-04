@@ -2747,6 +2747,217 @@ h3,
 .blog__more:active {
   text-decoration: none;
 }
+.price {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.price__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.price__list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.price__list ul li {
+  position: relative;
+  padding-left: 36px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.price__list ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 4px solid #D6975A;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.price__list ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: myCounter;
+}
+.price__list ol li {
+  position: relative;
+  padding-left: 40px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.price__list ol li::before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Playfair Display", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: #000000;
+  text-align: center;
+  border: 1px solid #D6975A;
+  border-radius: 50%;
+}
+.price__column {
+  width: 360px;
+  max-width: 100%;
+}
+.tabs {
+  margin-bottom: 160px;
+}
+.tabs__wrap {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.tabs__wrap::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: -15px;
+  right: -15px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+.tabs__title {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 400px;
+}
+.tabs__title .ui-tabs-active a {
+  width: 100%;
+  background-color: #D6975A;
+  background-image: url(../img/icons/next-black.svg);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.tabs__name {
+  font-size: 16px;
+  color: #fff;
+}
+.tabs__name a {
+  display: block;
+  width: 370px;
+  padding: 22px 23px;
+  padding-right: 35px;
+  line-height: 1;
+  outline: none;
+  background-color: #37312B;
+  background-image: url(../img/icons/next.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 16px;
+  background-position: right 23px center;
+  border-bottom: 1px solid #fff;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.tabs__field {
+  width: calc(100% - 400px);
+}
+.tabs__field table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tabs__field table th {
+  position: relative;
+  height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;
+  font-weight: 500;
+  text-align: left;
+  background-color: rgba(41, 35, 29, 0.6);
+}
+.tabs__field table th::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  left: 0;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.tabs__field table th:first-child {
+  padding-left: 22px;
+}
+.tabs__field table th:first-child::before {
+  display: none;
+}
+.tabs__field table th:nth-child(2) {
+  width: 100px;
+}
+.tabs__field table th:last-child {
+  width: 145px;
+  text-align: right;
+}
+.tabs__field table td {
+  position: relative;
+  height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 300;
+}
+.tabs__field table td::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  left: 0;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.tabs__field table td:first-child {
+  padding-left: 22px;
+}
+.tabs__field table td:first-child::before {
+  display: none;
+}
+.tabs__field table td:nth-child(2) {
+  width: 100px;
+}
+.tabs__field table td:last-child {
+  width: 145px;
+  text-align: right;
+  font-weight: 500;
+}
+.tabs__field table tr:nth-child(2n + 1) {
+  background-color: rgba(0, 0, 0, 0.03);
+}
 @media (max-width: 1400px) {
   .about__img img {
     height: 100%;
