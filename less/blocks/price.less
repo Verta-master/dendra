@@ -1,11 +1,22 @@
 .price {
   padding-top: 80px;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
+  
+  p {
+    max-width: 935px;
+  }
+}
+
+.price__text {
+  margin-top: 65px;
+  margin-bottom: 40px;
+  max-width: 935px;
 }
 
 .price__list {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 35px;
   
   ul {
     .reset();
@@ -13,9 +24,9 @@
     
     li {
       position: relative;
-      padding-left: 36px;
-      margin-top: 25px;
-      margin-bottom: 25px;
+      padding-left: 40px;
+      margin-top: 30px;
+      margin-bottom: 27px;
       
       &::before {
         content: "";
@@ -37,9 +48,9 @@
     
     li {
       position: relative;
-      padding-left: 40px;
-      margin-top: 25px;
-      margin-bottom: 25px;
+      padding-left: 50px;
+      margin-top: 30px;
+      margin-bottom: 27px;
       
       &::before {
         counter-increment: myCounter;
@@ -67,6 +78,6 @@
 }
 
 .price__column {
-  width: 360px;
+  width: 350px;
   max-width: 100%;
 }

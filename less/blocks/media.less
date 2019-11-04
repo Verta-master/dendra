@@ -135,6 +135,10 @@
   .blog__item {
     margin-right: 0;
   }
+  .tabs__wrap::before {
+    left: 0;
+    right: 0;
+  }
 }
 
 //-----------------------------------------
@@ -372,6 +376,19 @@
     width: 350px;
     max-width: 100%;
   }
+  .tabs__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tabs__field {
+    width: 100%;
+  }
+  .tabs__title {
+    margin-bottom: 20px;
+  }
+  .tabs {
+    margin-bottom: 80px;
+  }
 }
 
 //-----------------------------------------
@@ -467,6 +484,7 @@
   .intro__column-3:nth-child(3n) {
     padding-left: 0;
   }
+  .price__list,
   .contacts__list {
     display: block;
   }
@@ -474,6 +492,7 @@
     margin-bottom: 20px;
     padding-bottom: 30px;
   }
+  
 }
 
 //-----------------------------------------
@@ -613,5 +632,39 @@
   }
   .design__btn {
     bottom: 38px;
+  }
+  .tabs__name a,
+  .tabs__title {
+    max-width: 100%;
+  }
+  .tabs__field table td,
+  .tabs__field table tbody,
+  .tabs__field table {
+    display: block;
+  }
+  .tabs__field table {
+    tr:first-child {
+      display: none;
+    }
+    tr {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 5px;
+    }
+    td {
+      padding: 0;
+      height: auto;
+      width: 50%;
+      
+      &::before {
+        display: none;
+      }
+    }
+    td:first-child {
+      width: 100%;
+      padding-left: 0;
+      margin-bottom: 10px;
+    }
   }
 }
